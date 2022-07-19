@@ -10,18 +10,18 @@
 .banner {
   display: flex;
   background-color: #161616;
-  margin: 50px 140px;
+  margin: 50px 100px;
   height: 600px;
   border-radius: 30px;
 }
 
-.banner>div{
- width: 50%;
+.banner>div {
+  width: 50%;
 }
 
 .banner-text {
   color: white;
-  margin: 100px 0 100px 100px ;
+  margin: 100px 0 100px 100px;
 }
 
 .banner-text h1 {
@@ -51,12 +51,109 @@
 
 .banner-img {
   width: 90%;
- position: relative;
-  
+  position: relative;
+
 }
 
-.banner-img img{
+.banner-img img {
   position: absolute;
-  top: 94px;
+  top: 56px;
   width: 100%;
+}
+
+/* ----------------------blog section style ---------------------------------- */
+
+.blogs {
+  display: flex;
+}
+
+aside {
+  margin-left: 100px;
+}
+
+nav {
+  height: 300px;
+  width: 277px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #161616;
+}
+
+nav li {
+  background-color: white;
+  border-radius: 10px;
+  list-style: none;
+  text-align: center;
+  margin: 18px 0;
+  padding-top: 13px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  width: 240px;
+  height: 55px;
+}
+
+.default {
+  background-color: #DD0000;
+  color: white;
+}
+
+.blog {
+  margin-left: 14px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 14px;
+
+}
+
+.card {
+  border: 1px solid gray;
+  width: 277px;
+  height: 362px;
+  border-radius: 12px;
+}
+
+.card>div {
+  height: 50%;
+}
+
+.card-img {
+
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.card-text {
+  padding-left: 20px;
+}
+
+.card-text button {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 32px;
+  border: 1.5px solid gray;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.card-text h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+
+.duration {
+  width: 143px;
+  height: 26px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #161616B2;
 }
