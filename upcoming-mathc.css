@@ -96,12 +96,12 @@ nav li {
   height: 55px;
 }
 
-nav li a{
+nav li a {
   text-decoration: none;
-  color: black ;
+  color: black;
 }
 
-nav li:hover a{
+nav li:hover a {
   color: gray;
 }
 
@@ -119,49 +119,35 @@ nav li:hover a{
 }
 
 .card {
+  text-align: center;
   border: 1px solid gray;
   width: 277px;
-  height: 362px;
+  height: 240px;
+  padding: 50px 25px;
   border-radius: 12px;
 }
 
-.card>div {
-  height: 50%;
-}
-
-.card-img img {
-  width: 100%;
-}
-
-.card-text {
-  padding-left: 20px;
-}
-
-.card-text button {
-  margin-bottom: 10px;
-  width: 100px;
-  height: 32px;
-  border: 1.5px solid gray;
-  background-color: transparent;
-  border-radius: 5px;
-}
-
-.card-text h4 {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
-  margin-bottom: 20px;
-}
-
-.duration {
-  width: 143px;
-  height: 26px;
+.flag {
   display: flex;
-  margin-bottom: 20px;
-  justify-content: space-between;
-  font-size: 16px;
-  color: #161616B2;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.card h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 10px;
+  color: #4D4D4D;
+}
+
 
 /*----------------------------------- footer --------------------------- */
 
@@ -186,23 +172,23 @@ hr {
   columns: gray;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: white;
 }
 
-.links{
+.links {
   margin-top: 35px;
   margin-bottom: 20px;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
-.links a{
+.links a {
   color: gray;
 }
 
-.social-links a{
+.social-links a {
   font-size: 40px;
   margin: 0px 20px;
 }
