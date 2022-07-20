@@ -38,16 +38,69 @@
   padding-right: 20px;
 }
 
-.top-btn {
-  margin-top: 20px;
+ /*------------------------------ button animation----------------------------- */
+
+.glow-on-hover {
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 30px;
   width: 180px;
   height: 56px;
   border: none;
-  background-color: #DD0000;
+  outline: none;
   color: white;
-  font-weight: 400;
-  font-size: 20px;
-  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(3px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: gray;
+}
+
+.glow-on-hover:active:after {
+  background: black;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #DD0000;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
 .banner-img {
@@ -390,7 +443,7 @@ footer a {
 
 @media screen and (max-width:576px) {
 
-  /*--------------------------- banner section -------------------------------- */
+/*--------------------------- banner section -------------------------------- */
 
   header {
     margin: 30px;
@@ -412,6 +465,16 @@ footer a {
     text-align: center;
     margin: 0;
     padding: 20px;
+  }
+
+  .banner-text p {
+    height: 45px;
+    white-space: normal;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .banner-text h1 {
