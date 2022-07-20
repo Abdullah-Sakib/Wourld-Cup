@@ -166,6 +166,24 @@ nav li:hover a {
   color: #161616B2;
 }
 
+.button-container{
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bottom-btn {
+  width: 131px;
+  height: 47px;
+  background-color: #DD0000;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: white;
+  border-radius: 5px;
+}
+
 /*----------------------------------- footer --------------------------- */
 
 footer {
@@ -213,6 +231,8 @@ footer a {
 /*---------------------------- tablet responsive ---------------------------- */
 
 @media screen and (min-width:577px) and (max-width:768px) {
+
+  /* -------------------------banner section ---------------------------------- */
   .banner {
     height: 400px;
     margin: 45px;
@@ -224,7 +244,6 @@ footer a {
     color: white;
     margin: 0px;
     padding: 25% 0 20% 15%;
-
   }
 
   .banner-text h1 {
@@ -262,6 +281,8 @@ footer a {
     position: absolute;
     bottom: 0px;
   }
+
+  /* -----------------------------blog section ------------------------------- */
 
   aside {
     width: 100%;
@@ -332,6 +353,26 @@ footer a {
     font-size: 0.9rem;
   }
 
+  .hidden {
+    display: none;
+  }
+
+  .bottom-btn {
+    width: 131px;
+    height: 47px;
+    border: none;
+    background-color: #DD0000;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .button-container{
+    display: block;
+  }
+
   footer {
     padding: 30px;
   }
@@ -349,7 +390,7 @@ footer a {
 
 @media screen and (max-width:576px) {
 
-  /*--------------------------- banner section --------------------------------- */
+  /*--------------------------- banner section -------------------------------- */
 
   header {
     margin: 30px;
@@ -397,6 +438,13 @@ footer a {
     justify-content: center;
   }
 
+  aside {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   nav {
     background-color: transparent;
     margin-top: 0;
@@ -440,11 +488,11 @@ footer a {
     margin-top: 30px;
   }
 
-  .links{
+  .links {
     flex-direction: column;
   }
 
-  .links a{
+  .links a {
     display: inline-block;
     padding: 20px 100px;
   }
