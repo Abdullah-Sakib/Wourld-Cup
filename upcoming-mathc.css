@@ -64,7 +64,7 @@
   left:-2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(3px);
+  filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
@@ -496,4 +496,275 @@ footer a {
     padding: 20px 100px;
   }
 
+}
+
+
+/*-------------------- medium divece responsiveness -------------------------- */
+
+@media screen and (min-width:769px) and (max-width:992px){
+
+  .banner {
+    width: auto;
+    height: 550px;
+    margin: 45px;
+  }
+
+  .banner-text {
+    width: auto;
+    color: white;
+    margin: 90px 0px 90px 80px;
+    
+  }
+
+  .banner-text h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .banner-text p {
+    height: 45px;
+    white-space: normal;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .top-btn {
+    height: 45px;
+    width: 150px;
+    font-size: 17px;
+  }
+
+  .banner-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .banner-img img {
+    width: 100%;
+    height: 86%;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  /* -----------------------------blog section ------------------------------- */
+
+  aside {
+    width: 100%;
+    padding: 30px;
+    margin-left: 0;
+  }
+
+  nav {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav li {
+    border: 1px solid lightgray;
+    margin: 15px;
+    width: 200px;
+    height: 55px;
+  }
+
+  .blogs {
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px;
+  }
+
+  .blog {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+    margin: 30px;
+    margin-top: 0;
+  }
+
+  .top-div {
+    height: 35%;
+  }
+
+  .bottom-div {
+    height: 60%;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-img {
+    height: 100%;
+  }
+
+  .card-img img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-text {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .card-text h4 {
+    font-size: 0.9rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .bottom-btn {
+    width: 131px;
+    height: 47px;
+    border: none;
+    background-color: #DD0000;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .button-container{
+    display: block;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  footer .links {
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    margin: 5px 10px;
+  }
+}
+
+/*-------------------- Extra large device responsiveness---------------------- */
+
+@media screen and (min-width:993px) and (max-width:1200px){
+  .banner{
+    width: auto;
+    height: 550px;
+  }
+
+  .banner-text{
+    margin: 90px 0px 90px 80px;
+  }
+
+  .banner-text h1{
+    font-size: 3.4em;
+  }
+
+  aside {
+    width: 100%;
+    padding: 30px;
+    margin-left: 0;
+  }
+
+  nav {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav li {
+    border: 1px solid lightgray;
+    margin: 15px;
+    width: 200px;
+    height: 55px;
+  }
+
+  .blogs {
+    display: flex;
+    flex-direction: column;
+    margin: auto 78px;
+  }
+
+  .blog {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 20px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .top-div {
+    height: 35%;
+  }
+
+  .bottom-div {
+    height: 60%;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-img {
+    height: 100%;
+  }
+
+  .card-img img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-text {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  .card-text h4 {
+    font-size: 0.9rem;
+  }
+
+
+  .bottom-btn {
+    width: 131px;
+    height: 47px;
+    border: none;
+    background-color: #DD0000;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  footer .links {
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    margin: 5px 10px;
+  }
 }
