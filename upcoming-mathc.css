@@ -413,6 +413,16 @@ footer a {
     padding: 20px;
   }
 
+  .banner-text p {
+    height: 45px;
+    white-space: normal;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   .banner-text h1 {
     font-size: 2.5em;
   }
